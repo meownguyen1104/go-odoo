@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/skilld-labs/go-odoo/generator/cmd"
+	"github.com/meownguyen1104/go-odoo/generator/cmd"
 )
 
 func main() {

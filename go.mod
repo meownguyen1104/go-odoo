@@ -5,7 +5,6 @@ go 1.24.4
 require (
 	github.com/iancoleman/strcase v0.3.0
 	github.com/kolo/xmlrpc v0.0.0-20220921171641-a4b6fa1dd06b
-	github.com/skilld-labs/go-odoo v1.10.0
 	github.com/spf13/cobra v1.9.1
 )
 

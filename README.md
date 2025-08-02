@@ -2,10 +2,10 @@
 
 An Odoo API client enabling Go programs to interact with Odoo in a simple and uniform way.
 
-[![GitHub license](https://img.shields.io/github/license/skilld-labs/go-odoo.svg)](https://github.com/skilld-labs/go-odoo/blob/master/LICENSE)
-[![GoDoc](https://godoc.org/github.com/skilld-labs/go-odoo?status.svg)](https://pkg.go.dev/github.com/skilld-labs/go-odoo?tab=doc)
-[![Go Report Card](https://goreportcard.com/badge/github.com/skilld-labs/go-odoo)](https://goreportcard.com/report/github.com/skilld-labs/go-odoo)
-[![GitHub issues](https://img.shields.io/github/issues/skilld-labs/go-odoo.svg)](https://github.com/skilld-labs/go-odoo/issues)
+[![GitHub license](https://img.shields.io/github/license/meownguyen1104/go-odoo.svg)](https://github.com/meownguyen1104/go-odoo/blob/master/LICENSE)
+[![GoDoc](https://godoc.org/github.com/meownguyen1104/go-odoo?status.svg)](https://pkg.go.dev/github.com/meownguyen1104/go-odoo?tab=doc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/meownguyen1104/go-odoo)](https://goreportcard.com/report/github.com/meownguyen1104/go-odoo)
+[![GitHub issues](https://img.shields.io/github/issues/meownguyen1104/go-odoo.svg)](https://github.com/meownguyen1104/go-odoo/issues)
 
 ## Usage
 
@@ -25,9 +25,9 @@ Core models are `ir_model.go` and `ir_model_fields.go` since there are used to g
 
 It is **highly recommanded** to not remove them, since you would not be able to generate models again.
 
-#### Custom skilld-labs models
+#### Custom meownguyen1104 models
 
-All other models (not core one) are specific to skilld-labs usage. They use our own odoo instance which is **version 11**. (note that models structure changed between odoo major versions).
+All other models (not core one) are specific to meownguyen1104 usage. They use our own odoo instance which is **version 11**. (note that models structure changed between odoo major versions).
 
 If you're ok to work with those models, you can use this library instance, if not you should fork the repository and generate you own models by following steps above.
 
@@ -39,7 +39,7 @@ If you're ok to work with those models, you can use this library instance, if no
 package main
 
 import (
-	odoo "github.com/skilld-labs/go-odoo"
+	odoo "github.com/meownguyen1104/go-odoo"
 )
 
 func main() {
@@ -194,4 +194,4 @@ func (c *Client) ExecuteKw(method, model string, args []interface{}, options *Op
 
 ## Issues
 
-- If you have an issue, please report it on the [issue tracker](https://github.com/skilld-labs/go-odoo/issues)
+- If you have an issue, please report it on the [issue tracker](https://github.com/meownguyen1104/go-odoo/issues)
