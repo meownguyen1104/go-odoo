@@ -17,6 +17,7 @@ type ProductProduct struct {
 	AdditionalProductTagIds                *Relation   `xmlrpc:"additional_product_tag_ids,omitempty"`
 	AllProductTagIds                       *Relation   `xmlrpc:"all_product_tag_ids,omitempty"`
 	AttributeLineIds                       *Relation   `xmlrpc:"attribute_line_ids,omitempty"`
+	AvailableInPos                         *Bool       `xmlrpc:"available_in_pos,omitempty"`
 	AvgCost                                *Float      `xmlrpc:"avg_cost,omitempty"`
 	Barcode                                *String     `xmlrpc:"barcode,omitempty"`
 	CanImage1024BeZoomed                   *Bool       `xmlrpc:"can_image_1024_be_zoomed,omitempty"`
