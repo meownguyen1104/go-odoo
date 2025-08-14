@@ -11,8 +11,12 @@ An Odoo API client enabling Go programs to interact with Odoo in a simple and un
 
 ### Generate your models
 
+## Step 1: Configure Statement in .env file
+Fill in the value for your system in .env
+`ODOO_HOST` `ODOO_DB` `ODOO_USER` `ODOO_PASSWORD` `CUSTOM_MODULES`
+## Step 2: Run the following command
 ```bash
-./generator/generator -u admin_name -p admin_password -d database_name -o /the/directory/you/want/the/files/to/be/generated/in --url http://localhost:8069 -t ./generator/cmd/tmpl/model.tmpl -m crm.lead,res.users
+bash init_module.sh
 ```
 
 That's it ! Your models have been generated !

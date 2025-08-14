@@ -39,7 +39,6 @@ type AccountAccount struct {
 	OpeningCredit            *Float     `xmlrpc:"opening_credit,omitempty"`
 	OpeningDebit             *Float     `xmlrpc:"opening_debit,omitempty"`
 	PlaceholderCode          *String    `xmlrpc:"placeholder_code,omitempty"`
-	RatingIds                *Relation  `xmlrpc:"rating_ids,omitempty"`
 	Reconcile                *Bool      `xmlrpc:"reconcile,omitempty"`
 	RelatedTaxesAmount       *Int       `xmlrpc:"related_taxes_amount,omitempty"`
 	RootId                   *Many2One  `xmlrpc:"root_id,omitempty"`
