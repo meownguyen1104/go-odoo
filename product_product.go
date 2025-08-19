@@ -15,7 +15,6 @@ type ProductProduct struct {
 	ActivityUserId                       *Many2One   `xmlrpc:"activity_user_id,omitempty"`
 	AdditionalProductTagIds              *Relation   `xmlrpc:"additional_product_tag_ids,omitempty"`
 	AllProductTagIds                     *Relation   `xmlrpc:"all_product_tag_ids,omitempty"`
-	AssetCategoryId                      *Many2One   `xmlrpc:"asset_category_id,omitempty"`
 	AttributeLineIds                     *Relation   `xmlrpc:"attribute_line_ids,omitempty"`
 	AvailableInPos                       *Bool       `xmlrpc:"available_in_pos,omitempty"`
 	AvgCost                              *Float      `xmlrpc:"avg_cost,omitempty"`
@@ -35,7 +34,6 @@ type ProductProduct struct {
 	CreateUid                            *Many2One   `xmlrpc:"create_uid,omitempty"`
 	CurrencyId                           *Many2One   `xmlrpc:"currency_id,omitempty"`
 	DefaultCode                          *String     `xmlrpc:"default_code,omitempty"`
-	DeferredRevenueCategoryId            *Many2One   `xmlrpc:"deferred_revenue_category_id,omitempty"`
 	Description                          *String     `xmlrpc:"description,omitempty"`
 	DescriptionPicking                   *String     `xmlrpc:"description_picking,omitempty"`
 	DescriptionPickingin                 *String     `xmlrpc:"description_pickingin,omitempty"`
@@ -117,6 +115,7 @@ type ProductProduct struct {
 	RouteIds                             *Relation   `xmlrpc:"route_ids,omitempty"`
 	SaleDelay                            *Int        `xmlrpc:"sale_delay,omitempty"`
 	SaleOk                               *Bool       `xmlrpc:"sale_ok,omitempty"`
+	SelfOrderAvailable                   *Bool       `xmlrpc:"self_order_available,omitempty"`
 	SellerIds                            *Relation   `xmlrpc:"seller_ids,omitempty"`
 	Sequence                             *Int        `xmlrpc:"sequence,omitempty"`
 	ServiceTracking                      *Selection  `xmlrpc:"service_tracking,omitempty"`
@@ -152,6 +151,10 @@ type ProductProduct struct {
 	WeightUomName                        *String     `xmlrpc:"weight_uom_name,omitempty"`
 	WriteDate                            *Time       `xmlrpc:"write_date,omitempty"`
 	WriteUid                             *Many2One   `xmlrpc:"write_uid,omitempty"`
+	XCzHealthWarning                     *String     `xmlrpc:"x_cz_health_warning,omitempty"`
+	XCzProductId                         *String     `xmlrpc:"x_cz_product_id,omitempty"`
+	XCzTimeUse                           *String     `xmlrpc:"x_cz_time_use,omitempty"`
+	XServeAssistantIds                   *Relation   `xmlrpc:"x_serve_assistant_ids,omitempty"`
 }
 
 // ProductProducts represents array of product.product model.
