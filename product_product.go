@@ -154,6 +154,7 @@ type ProductProduct struct {
 	XCzHealthWarning                     *String     `xmlrpc:"x_cz_health_warning,omitempty"`
 	XCzProductId                         *String     `xmlrpc:"x_cz_product_id,omitempty"`
 	XCzTimeUse                           *Float      `xmlrpc:"x_cz_time_use,omitempty"`
+	XS3ImageUrl                          *String     `xmlrpc:"x_s3_image_url,omitempty"`
 	XServeAssistantIds                   *Relation   `xmlrpc:"x_serve_assistant_ids,omitempty"`
 }
 
