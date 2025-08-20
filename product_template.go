@@ -123,7 +123,7 @@ type ProductTemplate struct {
 	WriteUid                             *Many2One   `xmlrpc:"write_uid,omitempty"`
 	XCzHealthWarning                     *String     `xmlrpc:"x_cz_health_warning,omitempty"`
 	XCzProductId                         *String     `xmlrpc:"x_cz_product_id,omitempty"`
-	XCzTimeUse                           *String     `xmlrpc:"x_cz_time_use,omitempty"`
+	XCzTimeUse                           *Float      `xmlrpc:"x_cz_time_use,omitempty"`
 	XServeAssistantIds                   *Relation   `xmlrpc:"x_serve_assistant_ids,omitempty"`
 }
 
