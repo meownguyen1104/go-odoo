@@ -178,6 +178,9 @@ type ResPartner struct {
 	WriteDate                           *Time       `xmlrpc:"write_date,omitempty"`
 	WriteUid                            *Many2One   `xmlrpc:"write_uid,omitempty"`
 	Zip                                 *String     `xmlrpc:"zip,omitempty"`
+	XCzCustomerId                       *String     `xmlrpc:"x_cz_customer_id,omitempty"`
+	XS3AvatarUrl                        *String     `xmlrpc:"x_s3_avatar_url,omitempty"`
+	XS3PhotoCover                       *String     `xmlrpc:"x_s3_photo_cover,omitempty"`
 }
 
 // ResPartners represents array of res.partner model.
@@ -203,7 +206,6 @@ func (c *Client) CreateResPartner(rp *ResPartner) (int64, error) {
 	return ids[0], nil
 }
 
-// CreateResPartner creates a new res.partner model and returns its id.
 func (c *Client) CreateResPartners(rps []*ResPartner) ([]int64, error) {
 	var vv []interface{}
 	for _, v := range rps {
