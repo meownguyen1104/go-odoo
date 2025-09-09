@@ -15,6 +15,18 @@ type ProductCombo struct {
 	Sequence       *Int      `xmlrpc:"sequence,omitempty"`
 	WriteDate      *Time     `xmlrpc:"write_date,omitempty"`
 	WriteUid       *Many2One `xmlrpc:"write_uid,omitempty"`
+
+	XCzComboId          *String    `xmlrpc:"x_cz_combo_id"`
+	XCzTypeCombo        *Selection `xmlrpc:"x_cz_type_combo"`
+	XS3ImageUrl         *String    `xmlrpc:"x_s3_image_url"`
+	XCzDescribe         *String    `xmlrpc:"x_cz_describe"`
+	XCzTotalCostPrice   *Int       `xmlrpc:"x_cz_total_cost_price"`
+	XCzTotalListedPrice *Int       `xmlrpc:"x_cz_total_listed_price"`
+	XCzListedPrice      *Int       `xmlrpc:"x_cz_listed_price"`
+	XCzSellingPrice     *Int       `xmlrpc:"x_cz_selling_price"`
+	XCzDiscount         *Float     `xmlrpc:"x_cz_discount"`
+	XCzUnitDiscount     *String    `xmlrpc:"x_cz_unit_discount"`
+	XCzStatus           *String    `xmlrpc:"x_cz_status"`
 }
 
 // ProductCombos represents array of product.combo model.
