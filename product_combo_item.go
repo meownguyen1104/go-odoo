@@ -14,6 +14,9 @@ type ProductComboItem struct {
 	ProductId   *Many2One `xmlrpc:"product_id,omitempty"`
 	WriteDate   *Time     `xmlrpc:"write_date,omitempty"`
 	WriteUid    *Many2One `xmlrpc:"write_uid,omitempty"`
+
+	XCzComboItemId *String `xmlrpc:"x_cz_combo_item_id"`
+	XCzQuantity    *Int    `xmlrpc:"x_cz_quantity"`
 }
 
 // ProductComboItems represents array of product.combo.item model.
