@@ -27,6 +27,7 @@ type ProductCombo struct {
 	XCzDiscount         *Float     `xmlrpc:"x_cz_discount"`
 	XCzUnitDiscount     *String    `xmlrpc:"x_cz_unit_discount"`
 	XCzStatus           *String    `xmlrpc:"x_cz_status"`
+	XCzTax              *Float     `xmlrpc:"x_cz_tax"`
 }
 
 // ProductCombos represents array of product.combo model.
