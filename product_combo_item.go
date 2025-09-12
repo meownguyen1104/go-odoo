@@ -17,6 +17,7 @@ type ProductComboItem struct {
 
 	XCzComboItemId *String `xmlrpc:"x_cz_combo_item_id"`
 	XCzQuantity    *Int    `xmlrpc:"x_cz_quantity"`
+	XCzProductId   *String `xmlrpc:"x_cz_product_id,omitempty"`
 }
 
 // ProductComboItems represents array of product.combo.item model.
